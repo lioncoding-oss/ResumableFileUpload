@@ -1,0 +1,6 @@
+@ResumableFileUpload.Server_HostAddress = http://localhost:5034
+
+GET {{ResumableFileUpload.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
