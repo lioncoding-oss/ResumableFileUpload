@@ -1,0 +1,25 @@
+{
+  "name": "uploadclient",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@uppy/core": "^3.9.2",
+    "@uppy/dashboard": "^3.7.4",
+    "@uppy/drag-drop": "^3.0.3",
+    "@uppy/file-input": "^3.0.4",
+    "@uppy/progress-bar": "^3.0.4",
+    "@uppy/tus": "^3.5.3",
+    "@uppy/vue": "^1.1.2",
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.4"
+  }
+}
