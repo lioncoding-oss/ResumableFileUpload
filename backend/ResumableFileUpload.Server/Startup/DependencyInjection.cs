@@ -61,9 +61,10 @@ public static class DependencyInjection
 
         services.AddSingleton(tusDefaultConfig);
 
+        if (tuskDiskStorageOption is not { EnableExpiration: true }) return;
+
         services.AddQuartz(q =>
         {
-            if (tuskDiskStorageOption is not { EnableExpiration: true }) return;
 
             var jobKey = new JobKey(nameof(ExpiredFilesCleanupJob));
             q.AddJob<ExpiredFilesCleanupJob>(opts => opts.WithIdentity(jobKey));
