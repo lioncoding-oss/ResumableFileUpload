@@ -1,6 +1,6 @@
 # Resumable FileUpload
 
-To better understand the code, read the blog post: 
+To better understand the code, read the blog post: https://lioncoding.com/resumable-file-upload-in-.net/
 
 ![](assets/uploaded.png)
 
